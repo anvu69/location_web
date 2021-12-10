@@ -3,23 +3,19 @@ version '1.0'
 
 buildscript {
     repositories {
-        maven {
-            url "https://maven.google.com/"
-        }
         mavenCentral()
+        google()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        implementation 'com.android.tools.build:gradle:3.5.0'
     }
 }
 
 rootProject.allprojects {
     repositories {
-        maven {
-            url "https://maven.google.com/"
-        }
         mavenCentral()
+        google()
     }
 }
 
